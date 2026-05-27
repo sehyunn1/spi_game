@@ -75,3 +75,79 @@ b = box()
 while True :
     rate(50)
     b.pos = vec(0,random.uniform(0,5))
+
+5.27
+
+sphere(pos = vec(0, 0, 0), radius = 2, color=color.green)
+ellipsoid(pos=vec(0.8,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,0.6,0))
+ellipsoid(pos=vec(-0.8,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,-0.6,0))
+sphere(pos = vec(0, -0.7, 1.8), radius = 0.125, color=color.black)
+cone(pos=vec(0, -3.6, 0), axis=vec(0, 5, 0), radius=2, color=color.green)
+text(text='S.B.I', align='center', color=color.black, pos=vec(0,-3,1.6))
+
+box(pos=vec(0, -2, 0), length=5, height=7, width=5, color=color. white)
+
+sphere(pos = vec(5, 0, 0), radius = 2, color=color.green)
+ellipsoid(pos=vec(5.8,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,0.6,0))
+ellipsoid(pos=vec(4.2,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,-0.6,0))
+sphere(pos = vec(5, -0.7, 1.8), radius = 0.125, color=color.black)
+cone(pos=vec(5, -3.6, 0), axis=vec(0, 5, 0), radius=2, color=color.green)
+text(text='S.B.I', align='center', color=color.black, pos=vec(5,-3,1.6))
+
+box(pos=vec(5, -2, 0), length=5, height=7, width=5, color=color. white)
+
+sphere(pos = vec(10, 0, 0), radius = 2, color=color.green)
+ellipsoid(pos=vec(10.8,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,0.6,0))
+ellipsoid(pos=vec(9.2,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,-0.6,0))
+sphere(pos = vec(10, -0.7, 1.8), radius = 0.125, color=color.black)
+cone(pos=vec(10, -3.6, 0), axis=vec(0, 5, 0), radius=2, color=color.green)
+text(text='S.B.I', align='center', color=color.black, pos=vec(10,-3,1.6))
+
+box(pos=vec(10, -2, 0), length=5, height=7, width=5, color=color. white)
+
+sphere(pos = vec(0, 0, -5), radius = 2, color=color.green)
+ellipsoid(pos=vec(0.8,0.2,-3), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,0.6,0))
+ellipsoid(pos=vec(-0.8,0.2,-3), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,-0.6,0))
+sphere(pos = vec(0, -0.7, -3), radius = 0.125, color=color.black)
+cone(pos=vec(0, -3.6, -5), axis=vec(0, 5, 0), radius=2, color=color.green)
+text(text='S.B.I', align='center', color=color.black, pos=vec(0,-3,-3.4))
+
+box(pos=vec(0, -2, -5), length=5, height=7, width=5, color=color. white)
+
+sphere(pos = vec(5, 0, -5), radius = 2, color=color.green)
+ellipsoid(pos=vec(5.8,0.2,-3), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,0.6,0))
+ellipsoid(pos=vec(4.2,0.2,-3), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,-0.6,0))
+sphere(pos = vec(5, -0.7, -3), radius = 0.125, color=color.black)
+cone(pos=vec(5, -3.6, -5), axis=vec(0, 5, 0), radius=2, color=color.green)
+text(text='S.B.I', align='center', color=color.black, pos=vec(5,-3,-3.4))
+
+box(pos=vec(5, -2, -5), length=5, height=7, width=5, color=color. white)
+
+sphere(pos = vec(10, 0, -5), radius = 2, color=color.green)
+ellipsoid(pos=vec(10.8,0.2,-3), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,0.6,0))
+ellipsoid(pos=vec(9.2,0.2,-3), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,-0.6,0))
+sphere(pos = vec(10, -0.7, -3), radius = 0.125, color=color.black)
+cone(pos=vec(10, -3.6, -5), axis=vec(0, 5, 0), radius=2, color=color.green)
+text(text='S.B.I', align='center', color=color.black, pos=vec(10,-3,-3.4))
+
+box(pos=vec(10, -2, -5), length=5, height=7, width=5, color=color. white)
+    
+handle = cylinder( size=vec(1, 0.2, 0.2), color=color.white )
+head = box( size=vec(0.2, 0.6, 0.2), pos=vec(1.1, 0, 0), color=color.red)
+hammer = compound( [handle, head] )
+hammer.axis = vec(3,0,0)
+sphere(pos=vec(1.1, 0.3, 0), radius=0.2, color=color.red)
+sphere(pos=vec(1.1, -0.3, 0), radius=0.2, color=color.red)
+
+import random
+sphere(pos = vec(0, 0, 0), radius = 2, color=color.green)
+ellipsoid(pos=vec(0.8,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,0.6,0))
+ellipsoid(pos=vec(-0.8,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,-0.6,0))
+sphere(pos = vec(0, -0.7, 1.8), radius = 0.125, color=color.black)
+cone(pos=vec(0, -3.6, 0), axis=vec(0, 5, 0), radius=2, color=color.green)
+text(text='S.B.I', align='center', color=color.black, pos=vec(0,-3,1.6))
+b = compound( [sphere, ellipsoid, ellipsoid, sphere, cone, text] )
+
+while True :
+    rate(20)
+    b.pos.y = random.uniform(0,15)
