@@ -226,3 +226,49 @@ xx = compound([x1,x2,x3,x4,x5,x6])
 while True :
     rate(10)
     xx.pos.y = random.uniform(0,10)
+
+2026.6.10
+
+sphere(pos = vec(0, 0, 0), radius = 2, color=color.green)
+ellipsoid(pos=vec(0.8,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,0.6,0))
+ellipsoid(pos=vec(-0.8,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,-0.6,0))
+sphere(pos = vec(0, -0.7, 1.8), radius = 0.125, color=color.black)
+cone(pos=vec(0, -3.6, 0), axis=vec(0, 5, 0), radius=2, color=color.green)
+text(text='S.B.I', align='center', color=color.black, pos=vec(0,-3,1.6))
+
+box(pos=vec(0, -2, 0), length=5, height=7, width=5, color=color. white)
+
+sphere(pos = vec(5, 0, 0), radius = 2, color=color.green)
+ellipsoid(pos=vec(5.8,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,0.6,0))
+ellipsoid(pos=vec(4.2,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,-0.6,0))
+sphere(pos = vec(5, -0.7, 1.8), radius = 0.125, color=color.black)
+cone(pos=vec(5, -3.6, 0), axis=vec(0, 5, 0), radius=2, color=color.green)
+text(text='S.B.I', align='center', color=color.black, pos=vec(5,-3,1.6))
+
+box(pos=vec(5, -2, 0), length=5, height=7, width=5, color=color. white)
+
+import random
+x1 = sphere(pos = vec(0, 0, 0), radius = 2, color=color.green)
+x2 = ellipsoid(pos=vec(0.8,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,0.6,0))
+x3 = ellipsoid(pos=vec(-0.8,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,-0.6,0))
+x4 = sphere(pos = vec(0, -0.7, 1.8), radius = 0.125, color=color.black)
+x5 = cone(pos=vec(0, -3.6, 0), axis=vec(0, 5, 0), radius=2, color=color.green)
+x6 = text(text='S.B.I', align='center', color=color.black, pos=vec(0,-3,1.6))
+xx = compound([x1,x2,x3,x4,x5,x6])
+
+y1 = sphere(pos = vec(5, 0, 0), radius = 2, color=color.green)
+y2 = ellipsoid(pos=vec(5.8,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,0.6,0))
+y3 = ellipsoid(pos=vec(4.2,0.2,2), length=1.5, heigth=-0, width=0.8, color=color.black, axis = vec(1,-0.6,0))
+y4 = sphere(pos = vec(5, -0.7, 1.8), radius = 0.125, color=color.black)
+y5 = cone(pos=vec(5, -3.6, 0), axis=vec(0, 5, 0), radius=2, color=color.green)
+y6 = text(text='S.B.I', align='center', color=color.black, pos=vec(5,-3,1.6))
+yy = compound([y1,y2,y3,y4,y5,y6])
+
+while True :
+    rate(10)
+    k = keysdown()
+    if ' ' in k :
+        for i in range(5) :
+            xx.pos.y = random.uniform(0,i)
+            yy.pos.y = random.uniform(0,i)
+
