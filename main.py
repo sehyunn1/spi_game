@@ -271,4 +271,4 @@ while True :
         for i in range(5) :
             xx.pos.y = random.uniform(0,i)
             yy.pos.y = random.uniform(0,i)
-
+https://www.glowscript.org/#/user/dg2026823/folder/MyPrograms/program/%EC%99%B8%EA%B3%84%EC%9D%B8/edit
